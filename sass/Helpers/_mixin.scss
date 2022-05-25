@@ -1,0 +1,43 @@
+@mixin styleLayouts() {
+    width: 75%;
+    margin: 0 auto;
+}
+
+@mixin styleText($fs, $fw, $color) {
+    font-size: $fs ;
+    font-weight: $fw ;
+    color: $color ;
+}
+
+@mixin styleAfterNav($wh) {
+    content: "";
+    position: absolute;
+    width: $wh;
+    height: $wh;
+    background-color: $color-pink-0;
+    bottom: -27px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    transition: all .2s;
+}
+
+@mixin styleList {
+    list-style: none;
+    display: flex;
+    margin-bottom: 0;
+}
+
+@mixin styleHref($clr) {
+    text-decoration: none;
+    color: $clr;
+}
+
+@mixin styleButton($bg, $pdX, $pdY, $bd, $bd-r, $deco ) {
+    background-color: $bg;
+    // color: $clr;
+    padding: $pdX $pdY;
+    border: $bd;
+    border-radius: $bd-r;
+    text-decoration: $deco;
+}

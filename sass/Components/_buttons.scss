@@ -1,0 +1,13 @@
+.navbar-contact-btn {
+    a {
+        @include styleText($fs-2, $fw-4, $color-white-0);
+        @include styleButton ($color-pink-0, $pd-1, $pd-2, solid 1px $color-pink-0, $fs-6, none);
+        transition: all 0.5s;
+
+        &:hover {
+            @include styleText($fs-2, $fw-4, $color-pink-0);
+            @include styleButton ($color-white-0, $pd-1, $pd-2, solid 1px $color-pink-0, $fs-6, none);
+        }
+    }
+
+}
