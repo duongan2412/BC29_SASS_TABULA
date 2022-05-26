@@ -1,15 +1,15 @@
 .carousel__content {
-    @include styleLayouts();
+  @include styleLayouts(0, 0);
 
-    .carousel__left {
-        padding-top: $pd-3;
+  .carousel__left {
+    padding-top: $pd-3;
 
-        h2 {
-            @include styleText($fs-3, $fw-3, $color-pink-0);
-        }
-
-        h1 {
-            @include styleText($fs-7, $fw-3, $color-black-0);
-        }
+    h2 {
+      @include styleText($fs-3, $fw-3, $color-pink-0);
     }
+
+    h1 {
+      @include styleText($fs-7, $fw-3, $color-black-0);
+    }
+  }
 }

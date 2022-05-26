@@ -74,8 +74,9 @@
 }
 
 .header__content {
-  width: 75%;
+  width: 85%;
   margin: 0 auto;
+  padding: 0 0;
 }
 
 .header__content .navbar-collapse .navbar-nav {
@@ -104,8 +105,8 @@
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   border-radius: 50%;
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .header__content .navbar-collapse .navbar-nav .nav-item.active .nav-link::after {
@@ -119,8 +120,8 @@
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   border-radius: 50%;
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .header__content .navbar-collapse .navbar-nav .nav-item:hover .nav-link {
@@ -138,8 +139,8 @@
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   border-radius: 50%;
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .header__content .navbar-contact {
@@ -171,8 +172,9 @@
 }
 
 .carousel__content {
-  width: 75%;
+  width: 85%;
   margin: 0 auto;
+  padding: 0 0;
 }
 
 .carousel__content .carousel__left {
@@ -192,7 +194,19 @@
 }
 
 .teacher__content {
-  width: 75%;
+  width: 85%;
   margin: 0 auto;
+  padding: 12px 15px;
+}
+
+.course__content {
+  width: 85%;
+  margin: 0 auto;
+  padding: 100px 15px;
+}
+
+.course__content .right__content {
+  -webkit-box-shadow: 0 3px 30px 5px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 3px 30px 5px rgba(0, 0, 0, 0.15);
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,43 +1,47 @@
-@mixin styleLayouts() {
-    width: 75%;
-    margin: 0 auto;
+@mixin styleLayouts($pdX, $pdY) {
+  width: 85%;
+  margin: 0 auto;
+  padding: $pdX $pdY;
 }
 
 @mixin styleText($fs, $fw, $color) {
-    font-size: $fs ;
-    font-weight: $fw ;
-    color: $color ;
+  font-size: $fs;
+  font-weight: $fw;
+  color: $color;
 }
 
 @mixin styleAfterNav($wh) {
-    content: "";
-    position: absolute;
-    width: $wh;
-    height: $wh;
-    background-color: $color-pink-0;
-    bottom: -27px;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 50%;
-    transition: all .2s;
+  content: "";
+  position: absolute;
+  width: $wh;
+  height: $wh;
+  background-color: $color-pink-0;
+  bottom: -27px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  transition: all 0.2s;
 }
 
 @mixin styleList {
-    list-style: none;
-    display: flex;
-    margin-bottom: 0;
+  list-style: none;
+  display: flex;
+  margin-bottom: 0;
 }
 
 @mixin styleHref($clr) {
-    text-decoration: none;
-    color: $clr;
+  text-decoration: none;
+  color: $clr;
 }
 
-@mixin styleButton($bg, $pdX, $pdY, $bd, $bd-r, $deco ) {
-    background-color: $bg;
-    // color: $clr;
-    padding: $pdX $pdY;
-    border: $bd;
-    border-radius: $bd-r;
-    text-decoration: $deco;
+@mixin styleButton($bg, $pdX, $pdY, $bd, $bd-r, $deco) {
+  background-color: $bg;
+  // color: $clr;
+  padding: $pdX $pdY;
+  border: $bd;
+  border-radius: $bd-r;
+  text-decoration: $deco;
+}
+
+@include styleInputBox() {
 }

@@ -1,0 +1,12 @@
+.course__content {
+  @include styleLayouts($pd-4, $pd-2);
+  .right__content {
+    box-shadow: 0 3px 30px 5px rgba(0, 0, 0, 0.15);
+  }
+  .right__input {
+    .input__content1 {
+      border: solid 1px black;
+      background-color: red;
+    }
+  }
+}
