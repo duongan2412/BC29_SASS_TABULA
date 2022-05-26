@@ -1,0 +1,59 @@
+.input__content1 {
+    i {
+        @include styleInputI();
+    }
+
+    input {
+        @include styleInput(8px, 10px);
+
+        &:focus {
+            @include styleInputFocus();
+        }
+    }
+}
+
+.input__content2 {
+    @extend .input__content1;
+}
+
+.input__content3 {
+    i {
+        @include styleInputI();
+    }
+
+    // .right__dropdow {
+    //     margin-left: 15px;
+    // }
+
+    .right__dropdow__content {
+        position: relative;
+        padding: 8px 380px;
+        outline: solid 1px rgba(0, 0, 0, 0.15);
+        border: none;
+        border-radius: 10px;
+        transition: all 0.5s ease;
+        left: -15px;
+        padding-left: 40px;
+
+        &:focus {
+            @include styleInputFocus();
+        }
+    }
+}
+
+.input__content4 {
+    i {
+        @include styleInputI();
+    }
+
+    .input__content4_textarea {
+        position: relative;
+        padding: 8px 230px;
+        outline: solid 1px rgba(0, 0, 0, 0.15);
+        border: none;
+        border-radius: 10px;
+        transition: all 0.5s ease;
+        left: -15px;
+        padding-left: 40px;
+    }
+}

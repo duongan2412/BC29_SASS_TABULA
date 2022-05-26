@@ -31,6 +31,30 @@
   text-decoration: none;
 }
 
+.btn-form-course a {
+  font-size: 15px;
+  font-weight: 300;
+  color: #ffff;
+  background-color: #b61883;
+  padding: 12px 100px;
+  border: solid 1px #b61883;
+  border-radius: 50px;
+  text-decoration: none;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.btn-form-course a:hover {
+  font-size: 15px;
+  font-weight: 300;
+  color: #b61883;
+  background-color: #ffff;
+  padding: 12px 100px;
+  border: solid 1px #b61883;
+  border-radius: 50px;
+  text-decoration: none;
+}
+
 .card {
   border-radius: 8px;
   -webkit-transition: all 0.5s;
@@ -74,7 +98,7 @@
 }
 
 .header__content {
-  width: 85%;
+  width: 70%;
   margin: 0 auto;
   padding: 0 0;
 }
@@ -172,7 +196,7 @@
 }
 
 .carousel__content {
-  width: 85%;
+  width: 70%;
   margin: 0 auto;
   padding: 0 0;
 }
@@ -194,13 +218,13 @@
 }
 
 .teacher__content {
-  width: 85%;
+  width: 70%;
   margin: 0 auto;
   padding: 12px 15px;
 }
 
 .course__content {
-  width: 85%;
+  width: 70%;
   margin: 0 auto;
   padding: 100px 15px;
 }
@@ -208,5 +232,73 @@
 .course__content .right__content {
   -webkit-box-shadow: 0 3px 30px 5px rgba(0, 0, 0, 0.15);
           box-shadow: 0 3px 30px 5px rgba(0, 0, 0, 0.15);
+}
+
+.input__content1 i, .input__content2 i {
+  position: absolute;
+  z-index: 999;
+  color: #b61883;
+}
+
+.input__content1 input, .input__content2 input {
+  position: relative;
+  padding: 8px 10px;
+  outline: solid 1px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 10px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  left: -15px;
+  padding-left: 40px;
+}
+
+.input__content1 input:focus, .input__content2 input:focus {
+  outline: solid 1px rgba(0, 0, 0, 0.5);
+}
+
+.input__content3 i {
+  position: absolute;
+  z-index: 999;
+  color: #b61883;
+}
+
+.input__content3 .right__dropdow__content {
+  position: relative;
+  padding: 8px 380px;
+  outline: solid 1px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 10px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  left: -15px;
+  padding-left: 40px;
+}
+
+.input__content3 .right__dropdow__content:focus {
+  outline: solid 1px rgba(0, 0, 0, 0.5);
+}
+
+.input__content4 i {
+  position: absolute;
+  z-index: 999;
+  color: #b61883;
+}
+
+.input__content4 .input__content4_textarea {
+  position: relative;
+  padding: 8px 230px;
+  outline: solid 1px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 10px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  left: -15px;
+  padding-left: 40px;
+}
+
+.footer__content {
+  width: 70%;
+  margin: 0 auto;
+  padding: 100px 15px;
 }
 /*# sourceMappingURL=style.css.map */
