@@ -1,6 +1,5 @@
 .carousel__content {
-  @include styleLayouts(0, 0);
-
+  @include styleLayouts(85%, 0, 0);
   .carousel__left {
     padding-top: $pd-3;
 
@@ -10,6 +9,15 @@
 
     h1 {
       @include styleText($fs-7, $fw-3, $color-black-0);
+    }
+  }
+
+  @include respond(large) {
+    .carousel__left {
+      padding-top: $pd-4;
+      h1 {
+        font-size: 40px;
+      }
     }
   }
 }

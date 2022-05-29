@@ -1,65 +1,69 @@
 .header__content {
-  @include styleLayouts(0, 0);
-  // position: absolute;
-  // width: 100%;
-  // z-index: 999;
+  @include styleLayouts(90%, 0, 0);
+  .navbar-toggler {
+    background-color: $color-pink-0;
+    .navbar-toggler-icon {
+      i {
+        line-height: 1.5;
+      }
+    }
+  }
+}
 
-  .navbar-collapse {
-    .navbar-nav {
-      margin-left: auto;
-
-      .nav-item {
-        margin-left: $fs-4;
-
-        .nav-link {
-          @include styleText($fs-2, $fw-3, $color-black-0);
-          position: relative;
-
-          &::after {
-            @include styleAfterNav(0);
-          }
+.navbar-nav {
+  margin-left: auto;
+  .nav-item {
+    a {
+      @include styleText($fs-9, $fw-2, $color-black-0);
+      position: relative;
+      &::after {
+        @include styleAfterNav(0);
+      }
+    }
+    &.active {
+      .nav-link {
+        &::after {
+          @include styleAfterNav($fs-1);
         }
+      }
+    }
 
-        &.active {
-          .nav-link {
-            &::after {
-              @include styleAfterNav($fs-1);
-            }
-          }
-        }
+    &:hover {
+      .nav-link {
+        color: $color-pink-0;
 
-        &:hover {
-          .nav-link {
-            color: $color-pink-0;
-
-            &::after {
-              @include styleAfterNav($fs-2);
-            }
-          }
+        &::after {
+          @include styleAfterNav($fs-2);
         }
       }
     }
   }
 }
 
-.header__content {
-  .navbar-contact {
-    flex: 10%;
+.navbar-nav {
+  .nav-item.navbar-socials {
+    a {
+      margin-left: 3px;
+    }
+    a:hover {
+      color: $color-pink-0;
+    }
   }
+}
 
-  .navbar-contact-list {
-    @include styleList;
+.header__bg {
+  z-index: -1;
+  position: absolute;
+}
 
-    li {
-      margin-left: 10px;
-
-      a {
-        @include styleHref($color-black-0);
-
-        &:hover {
-          @include styleHref($color-pink-0);
-        }
-      }
+@media screen and (min-width: 1311px) {
+  .navbar-contact-btn {
+    @include styleBtn(5px, 7px, none, $fs-9);
+    i {
+      font-size: $fs-1;
+    }
+    span {
+      @include styleText($fs-1, $fw-1, $color-white-0);
     }
   }
 }

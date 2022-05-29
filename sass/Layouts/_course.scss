@@ -1,7 +1,24 @@
 .course__content {
-  @include styleLayouts($pd-4, $pd-2);
+  @include styleLayouts(75%, $pd-4, $pd-2);
 
   .right__content {
     box-shadow: 0 3px 30px 5px rgba(0, 0, 0, 0.15);
+    border-radius: $br-2;
   }
+}
+
+.course {
+  position: relative;
+  // padding-bottom: 800px;
+  overflow: hidden;
+}
+
+.course__bg {
+  background-image: url("./../../img/accent_bottom_wave_01.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  z-index: -1;
+  width: 100%;
+  // height: 300px;
 }

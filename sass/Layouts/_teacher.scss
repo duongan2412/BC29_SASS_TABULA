@@ -1,3 +1,6 @@
 .teacher__content {
-  @include styleLayouts($pd-1, $pd-2);
+  @include styleLayouts(85%, 0, $pd-2);
+  .item__content {
+    margin-top: 50px;
+  }
 }
