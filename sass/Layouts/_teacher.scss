@@ -1,6 +1,24 @@
+.teacher {
+  background-color: #dcd1f3;
+  // background-color: red;
+  background-image: url("./../../img/Wave_White_bottom_right_shape_01.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  // height: 500px;
+  // width: 100%;
+  // position: absolute;
+  // transform: rotate(180deg);
+  // padding-top: 500px;
+}
+
 .teacher__content {
   @include styleLayouts(85%, 0, $pd-2);
   .item__content {
     margin-top: 50px;
   }
+  // background-color: red;
+  // background-image: url("./../../img/Wave_White_bottom_right_shape_01.png");
+  // background-repeat: no-repeat;
+  // background-position: bottom center;
 }

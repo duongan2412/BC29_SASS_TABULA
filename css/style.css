@@ -336,6 +336,14 @@
   }
 }
 
+.teacher {
+  background-color: #dcd1f3;
+  background-image: url("./../../img/Wave_White_bottom_right_shape_01.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+}
+
 .teacher__content {
   width: 85%;
   margin: 0 auto;
