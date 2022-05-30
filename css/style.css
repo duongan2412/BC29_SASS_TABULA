@@ -305,6 +305,13 @@
   }
 }
 
+.carousel {
+  background-image: url("./../../img/Violet_top_left_wave.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+}
+
 .carousel__content {
   width: 85%;
   margin: 0 auto;

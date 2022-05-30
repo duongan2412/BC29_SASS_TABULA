@@ -90,11 +90,11 @@
     <section class="carousel">
         <div class="carousel__content container-fluid">
             <div class="row">
-                <div class="col-sm-6 col-12  carousel__left">
+                <div class="wow animate__animated animate__fadeInLeft col-sm-6 col-12  carousel__left">
                     <h2>ABOUT US</h2>
                     <h1>The language teaching experts</h1>
                 </div>
-                <div class="col-sm-6 col-12 carousel__right">
+                <div class="wow animate__animated animate__fadeIn col-sm-6 col-12 carousel__right">
                     <img src="./img/hero_team.png" class="img-fluid">
                 </div>
             </div>
@@ -105,7 +105,7 @@
     <!-- Teacher -->
     <section class="teacher">
         <!-- <div class="teacher__bgT container-fluid"></div> -->
-        <div class="teacher__content container-fluid">
+        <div class="wow animate__animated animate__fadeInLeft teacher__content container-fluid">
             <div class="row text-center">
                 <div class="col-lg-3 col-sm-6 col-12 item__content">
                     <div class="card" style="width:245px">
@@ -230,10 +230,10 @@
         <div class="course__bg">
             <div class="course__content container-fluid">
                 <div class="row">
-                    <div class="col-md-6 course__left">
+                    <div class="wow animate__animated animate__fadeInLeft col-md-6 course__left">
                         <img src="./img/conatct_inner.png" class="img-fluid" alt="">
                     </div>
-                    <div class="col-md-6 course__right">
+                    <div class="wow animate__animated animate__fadeInDownBig col-md-6 course__right">
                         <div class="right__content">
                             <h1 class="text-center py-4 mb-0">Find Your Course</h1>
                             <div class="right__input container px-5">
@@ -287,7 +287,7 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer__content container-fluid">
+        <div class="wow animate__animated animate__fadeInLeft footer__content container-fluid">
             <div class="row">
                 <div class="col-md-3 col-sm-6 col-12 footer__item">
                     <h4>Contact us</h4>
@@ -354,6 +354,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <!-- Wowjs -->
+    <script src="./libs/wowjs/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>

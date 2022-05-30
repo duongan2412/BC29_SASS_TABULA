@@ -1,5 +1,13 @@
+.carousel {
+  background-image: url("./../../img/Violet_top_left_wave.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+}
+
 .carousel__content {
   @include styleLayouts(85%, 0, 0);
+
   .carousel__left {
     padding-top: $pd-3;
 
@@ -15,6 +23,7 @@
   @include respond(large) {
     .carousel__left {
       padding-top: $pd-4;
+
       h1 {
         font-size: 40px;
       }
