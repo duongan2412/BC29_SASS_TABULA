@@ -106,120 +106,21 @@
     <section class="teacher">
         <!-- <div class="teacher__bgT container-fluid"></div> -->
         <div class="wow animate__animated animate__fadeInLeft teacher__content container-fluid">
-            <div class="row text-center">
-                <div class="col-lg-3 col-sm-6 col-12 item__content">
-                    <div class="card" style="width:245px">
-                        <div class="card__img">
-                            <img class="card-img-top" src="./img/teacher_1.jpg" alt="Card image" style="width:100%">
-                        </div>
-                        <div class="card-body">
-                            <h4 class="card-title">
-                                <p>ITALIAN</p>
-                                <p>July Roberts</p>
-                            </h4>
-                            <p class="card-text">Some example text some example text. John Doe is an architect</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6 col-12 item__content">
-                    <div class="card" style="width:245px">
-                        <div class="card__img">
-                            <img class="card-img-top" src="./img/teacher_2.jpg" alt="Card image" style="width:100%">
-                        </div>
-                        <div class="card-body">
-                            <h4 class="card-title">
-                                <p>FRENCH</p>
-                                <p>Jon Stone</p>
-                            </h4>
-                            <p class="card-text">Some example text some example text. John Doe is an architect</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6 col-12 item__content">
-                    <div class="card" style="width:245px">
-                        <div class="card__img">
-                            <img class="card-img-top" src="./img/teacher_3.jpg" alt="Card image" style="width:100%">
-                        </div>
-                        <div class="card-body">
-                            <h4 class="card-title">
-                                <p>JAPANESE</p>
-                                <p>Emma Stone</p>
-                            </h4>
-                            <p class="card-text">Some example text some example text. John Doe is an architect</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6 col-12 item__content">
-                    <div class="card" style="width:245px">
-                        <div class="card__img">
-                            <img class="card-img-top" src="./img/teacher_4.jpg" alt="Card image" style="width:100%">
-                        </div>
-                        <div class="card-body">
-                            <h4 class="card-title">
-                                <p>CHINESE</p>
-                                <p>Mark Lee</p>
-                            </h4>
-                            <p class="card-text">Some example text some example text. John Doe is an architect</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6 col-12 item__content">
-                    <div class="card" style="width:245px">
-                        <div class="card__img">
-                            <img class="card-img-top" src="./img/teacher_5.jpg" alt="Card image" style="width:100%">
-                        </div>
-                        <div class="card-body">
-                            <h4 class="card-title">
-                                <p>RUSSIAN</p>
-                                <p>John Doe</p>
-                            </h4>
-                            <p class="card-text">Some example text some example text. John Doe is an architect</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6 col-12 item__content">
-                    <div class="card" style="width:245px">
-                        <div class="card__img">
-                            <img class="card-img-top" src="./img/teacher_6.jpg" alt="Card image" style="width:100%">
-                        </div>
-                        <div class="card-body">
-                            <h4 class="card-title">
-                                <p>SWEDEN</p>
-                                <p>Jane Smith</p>
-                            </h4>
-                            <p class="card-text">Some example text some example text. John Doe is an architect</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6 col-12 item__content">
-                    <div class="card" style="width:245px">
-                        <div class="card__img">
-                            <img class="card-img-top" src="./img/teacher_7.jpg" alt="Card image" style="width:100%">
-                        </div>
-                        <div class="card-body">
-                            <h4 class="card-title">
-                                <p>SPANISH</p>
-                                <p>Hanna Alverez</p>
-                            </h4>
-                            <p class="card-text">Some example text some example text. John Doe is an architect</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6 col-12 item__content">
-                    <div class="card" style="width:245px">
-                        <div class="card__img">
-                            <img class="card-img-top" src="./img/teacher_8.jpg" alt="Card image" style="width:100%">
-                        </div>
-                        <div class="card-body">
-                            <h4 class="card-title">
-                                <p>ITALIAN</p>
-                                <p>July Roberts</p>
-                            </h4>
-                            <p class="card-text">Some example text some example text. John Doe is an architect</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="lds-spinner" id="loader">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
+            <div class="row text-center" id="tbTeacher"></div>
         </div>
         <!-- <div class="teacher__bgB container-fluid"></div> -->
     </section>
@@ -354,11 +255,18 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <!-- Axios -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js"
+        integrity="sha512-xIPqqrfvUAc/Cspuj7Bq0UtHNo/5qkdyngx6Vwt+tmbvTLDszzXM0G6c91LXmGrRx8KEPulT+AfOOez+TeVylg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Wowjs -->
     <script src="./libs/wowjs/wow.min.js"></script>
     <script>
         new WOW().init();
     </script>
+    <!-- My JS -->
+    <script src="./services/index.js"></script>
+    <script src="./src/main.js"></script>
 </body>
 
 </html>
