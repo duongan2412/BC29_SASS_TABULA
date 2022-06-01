@@ -52,8 +52,3 @@ function renderListTeacher(data) {
     getEle("tbTeacher").innerHTML = contentHTML;
 }
 
-function checkGV() {
-    if (teacher.loaiND == "GV") {
-        return teacher;
-    }
-}
